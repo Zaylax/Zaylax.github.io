@@ -93,7 +93,7 @@ header.masthead .masthead-content .masthead-subheading {
 footer {
   padding: 25px 0;
   text-align: center;
-  background: #2a419e
+  background: #3d6098
 }
 
 footer span.copyright {
@@ -131,14 +131,13 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #c49f54
+  background-color: #f04b4c
 }
 
 
-
 :root {
-  --hex-width: 20rem; 
-  --hex-between: 0.1rem;
+  --hex-width: 30rem; 
+  --hex-between: 0.0rem;
   
   --hex-height: calc(var(--hex-width) / 1.73 /* sqrt(3) */);
   --hex-margin: calc(var(--hex-width) / 10);
@@ -163,7 +162,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   margin: var(--hex-border) 0;
   position: relative;
   transition: var(--hex-transition);
-  width: var(--hex-width);
 }
 
 .square:hover {
