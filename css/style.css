@@ -31,7 +31,7 @@ h6 {
 .navbar-custom {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(255, 255, 255);
 }
 
 .navbar-custom .navbar-brand {
@@ -52,9 +52,9 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: -webkit-linear-gradient(to right, #192231bf 0%, #494e6bbf 40%, #98878fbf 100%), url("../img/header.jpg") no-repeat;
+  background: -webkit-linear-gradient(to bottom, #3d6098bf 0%, #3d6098bf 100%), url("../img/header.jpg") no-repeat;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #192231bf 0%, #494e6bbf 40%, #98878fbf 100%), url("../img/header.jpg") no-repeat;
+  background: linear-gradient(to bottom, #3d6098bf 0%, #3d6098bf 100%), url("../img/header.jpg") no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -77,8 +77,10 @@ header.masthead .masthead-content .masthead-subheading {
 
 @media (min-width: 992px) {
   header.masthead {
-    padding-top: calc(10rem + 55px);
-    padding-bottom: 25rem;
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 25rem;
+    padding-bottom: calc(10rem - 56px);
   }
   header.masthead .masthead-content .masthead-heading {
     font-size: 6rem;
@@ -91,7 +93,7 @@ header.masthead .masthead-content .masthead-subheading {
 footer {
   padding: 25px 0;
   text-align: center;
-  background: #494e6b
+  background: #2a419e
 }
 
 footer span.copyright {
@@ -130,4 +132,85 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #c49f54
+}
+
+
+
+:root {
+  --hex-width: 20rem; 
+  --hex-between: 0.1rem;
+  
+  --hex-height: calc(var(--hex-width) / 1.73 /* sqrt(3) */);
+  --hex-margin: calc(var(--hex-width) / 10);
+  --hex-border: calc(var(--hex-margin) / 1.73 /* sqrt(3) */);
+  --hex-transition: all .2s ease;
+  
+  --color-hex-default: #000000;
+  --color-hex-hover:   #FFFFFF;
+  --color-dark-purple: #f04b4c;
+  --color-light-purple:#ed1c24;
+  --color-pink:        #ff0178;
+}
+
+.square {
+  align-items: center;
+  background-color: var(--color-hex-default);
+  cursor: pointer;
+  display: flex;
+  color: #e9ecef;
+  height: var(--hex-height);
+  justify-content: center;
+  margin: var(--hex-border) 0;
+  position: relative;
+  transition: var(--hex-transition);
+  width: var(--hex-width);
+}
+
+.square:hover {
+  background-color: var(--color-hex-hover);
+  text-decoration: none
+}
+
+.square:hover::after, .square:hover::before {
+  border-top-color: var(--color-hex-hover);
+  border-bottom-color: var(--color-hex-hover)
+}
+
+.color-dark-purple {
+  background-color: var(--color-dark-purple)
+}
+
+.color-dark-purple::after, .color-dark-purple::before {
+  border-top-color: var(--color-dark-purple);
+  border-bottom-color: var(--color-dark-purple)
+}
+
+.color-dark-purple:hover {
+  color: var(--color-dark-purple)
+} 
+
+.color-light-purple {
+  background-color: var(--color-light-purple)
+}
+
+.color-light-purple::after, .color-light-purple::before {
+  border-top-color: var(--color-light-purple);
+  border-bottom-color: var(--color-light-purple)
+}
+
+.color-light-purple:hover {
+  color: var(--color-light-purple)
+}
+
+.color-pink {
+  background-color: var(--color-pink)
+}
+
+.color-pink::after, .color-pink::before {
+  border-top-color: var(--color-pink);
+  border-bottom-color: var(--color-pink)
+}
+
+.color-pink:hover {
+  color: var(--color-pink)
 }
