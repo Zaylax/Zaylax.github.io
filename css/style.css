@@ -1,15 +1,10 @@
 body {
-  font-family: 'Lato';
+  font-family: 'Lato'
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Catamaran';
-  font-weight: 800 !important;
+  font-weight: 800 !important
 }
 
 a {
@@ -25,35 +20,49 @@ a:hover {
   padding: 1.5rem 3rem;
   font-size: 0.9rem;
   font-weight: 700;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem
 }
 
 .bg-black {
-  background-color: #000 !important;
+  background-color: #000 !important
+}
+
+.btn-primary {
+  background-color: #ed1c24;
+  border-color: #ed1c24
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #8d0d11 !important;
+  border-color: #8d0d11 !important
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(141, 13, 17, 0.5)
 }
 
 .rounded-pill {
-  border-radius: 5rem;
+  border-radius: 5rem
 }
 
 .navbar-custom {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255)
 }
 
 .navbar-custom .navbar-brand {
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 0.1rem;
-  font-weight: 700;
+  font-weight: 700
 }
 
 .navbar-custom .navbar-nav .nav-item .nav-link {
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem
 }
 
 header.masthead {
@@ -72,15 +81,15 @@ header.masthead {
 
 header.masthead .masthead-content {
   z-index: 1;
-  position: relative;
+  position: relative
 }
 
 header.masthead .masthead-content .masthead-heading {
-  font-size: 4rem;
+  font-size: 4rem
 }
 
 header.masthead .masthead-content .masthead-subheading {
-  font-size: 2rem;
+  font-size: 2rem
 }
 
 @media (min-width: 992px) {
@@ -88,14 +97,16 @@ header.masthead .masthead-content .masthead-subheading {
     height: 100vh;
     min-height: 650px;
     padding-top: 18rem;
-    padding-bottom: calc(10rem - 56px);
+    padding-bottom: calc(10rem - 56px)
   }
+
   header.masthead .masthead-content .masthead-heading {
-    font-size: 6rem;
+    font-size: 6rem
   }
+
   header.masthead .masthead-content .masthead-subheading {
     font-size: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 4rem
   }
 }
 
@@ -140,98 +151,55 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #f04b4c
+  background-color: #f04b3d
 }
 
-
 :root {
-  --hex-width: 30rem; 
-  --hex-between: 0.0rem;
-  
-  --hex-height: calc(var(--hex-width) / 1.73 /* sqrt(3) */);
-  --hex-margin: calc(var(--hex-width) / 10);
-  --hex-border: calc(var(--hex-margin) / 1.73 /* sqrt(3) */);
-  --hex-transition: all .2s ease;
-  
-  --color-hex-default: #000000;
-  --color-hex-hover:   #FFFFFF;
-  --color-dark-purple: #f04b4c;
-  --color-light-purple:#ed1c24;
-  --color-pink:        #ff0178;
+  --square-width: 30rem;
+  --square-between: 0.0rem;
+  --square-height: calc(var(--square-width) / 1.73
+  );
+  --square-margin: calc(var(--square-width) / 10);
+  --square-border: calc(var(--square-margin) / 1.73
+  );
+  --square-transition: all .2s ease;
+  --color-square-default: #000000;
+  --color-square-hover: #FFFFFF;
+  --color-light-red: #f04b3d;
 }
 
 .square {
   align-items: center;
-  background-color: var(--color-hex-default);
+  background-color: var(--color-square-default);
   cursor: pointer;
   display: flex;
   color: #e9ecef;
-  height: var(--hex-height);
+  height: var(--square-height);
   justify-content: center;
-  margin: var(--hex-border) 0;
+  margin: var(--square-border) 0;
   position: relative;
-  transition: var(--hex-transition);
+  transition: var(--square-transition)
 }
 
 .square:hover {
-  background-color: var(--color-hex-hover);
+  background-color: var(--color-square-hover);
   text-decoration: none
 }
 
 .square:hover::after, .square:hover::before {
-  border-top-color: var(--color-hex-hover);
-  border-bottom-color: var(--color-hex-hover)
+  border-top-color: var(--color-square-hover);
+  border-bottom-color: var(--color-square-hover)
 }
 
-.color-dark-purple {
-  background-color: var(--color-dark-purple)
+.color-light-red {
+  background-color: var(--color-light-red)
 }
 
-.color-dark-purple::after, .color-dark-purple::before {
-  border-top-color: var(--color-dark-purple);
-  border-bottom-color: var(--color-dark-purple)
+.color-light-red::after, .color-light-red::before {
+  border-top-color: var(--color-light-red);
+  border-bottom-color: var(--color-light-red)
 }
 
-.color-dark-purple:hover {
-  color: var(--color-dark-purple)
-} 
-
-.color-light-purple {
-  background-color: var(--color-light-purple)
-}
-
-.color-light-purple::after, .color-light-purple::before {
-  border-top-color: var(--color-light-purple);
-  border-bottom-color: var(--color-light-purple)
-}
-
-.color-light-purple:hover {
-  color: var(--color-light-purple)
-}
-
-.color-pink {
-  background-color: var(--color-pink)
-}
-
-.color-pink::after, .color-pink::before {
-  border-top-color: var(--color-pink);
-  border-bottom-color: var(--color-pink)
-}
-
-.color-pink:hover {
-  color: var(--color-pink)
-}
-
-.btn-primary {
-  background-color: #ed1c24;
-  border-color: #ed1c24;
-}
-
-.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #8d0d11 !important;
-  border-color: #8d0d11 !important;
-}
-
-.btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(141, 13, 17, 0.5);
+.color-light-red:hover {
+  color: var(--color-light-red)
 }
