@@ -12,6 +12,14 @@ h6 {
   font-weight: 800 !important;
 }
 
+a {
+  color: #fff
+}
+
+a:hover {
+  color: #ed1c24
+}
+
 .btn-xl {
   text-transform: uppercase;
   padding: 1.5rem 3rem;
@@ -79,7 +87,7 @@ header.masthead .masthead-content .masthead-subheading {
   header.masthead {
     height: 100vh;
     min-height: 650px;
-    padding-top: 25rem;
+    padding-top: 18rem;
     padding-bottom: calc(10rem - 56px);
   }
   header.masthead .masthead-content .masthead-heading {
@@ -87,6 +95,7 @@ header.masthead .masthead-content .masthead-subheading {
   }
   header.masthead .masthead-content .masthead-subheading {
     font-size: 4rem;
+    padding-bottom: 4rem;
   }
 }
 
@@ -211,4 +220,18 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .color-pink:hover {
   color: var(--color-pink)
+}
+
+.btn-primary {
+  background-color: #ed1c24;
+  border-color: #ed1c24;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #8d0d11 !important;
+  border-color: #8d0d11 !important;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(141, 13, 17, 0.5);
 }
