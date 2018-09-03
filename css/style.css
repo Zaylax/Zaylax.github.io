@@ -46,13 +46,14 @@ a:hover {
 }
 
 .navbar-custom {
+  background: #fff;
   padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: rgb(255, 255, 255)
+  padding-bottom: 1rem
 }
 
 .navbar-custom .navbar-brand {
   text-transform: uppercase;
+  color: #3d6098;
   font-size: 1rem;
   letter-spacing: 0.1rem;
   font-weight: 700
@@ -60,6 +61,7 @@ a:hover {
 
 .navbar-custom .navbar-nav .nav-item .nav-link {
   text-transform: uppercase;
+  color: #3d6098;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.1rem
