@@ -44,7 +44,7 @@
       <div class="row">
         <div class="col-lg-4">
           <a class="square color-light-red" href="soczewki.html" title="Soczewki okularowe i kontaktowe">
-            <h3>Drugie oczy</h3>
+            <h3>Soczewki</h3>
           </a>
         </div>
         <div class="col-lg-4">
@@ -96,10 +96,18 @@
         </div>
         <div class="col-lg-6 col-md-2 col-xs-3">
           <div class="row">
-            <div class="col-lg-12 mx-auto text-center" style="margin-top:30%;">
+            <div class="col-lg-12 mx-auto text-center" style="margin-top:20%;">
+              <div class="col-lg-12 text-center">
+                <h5 class="section-heading text-uppercase">Adres</h5>
+              </div>
               <p class="large text-muted">Bulwar Ikara 15/6a </p>
               <p class="large text-muted">54-130 Wrocław </p>
-              <p class="large text-muted">Pn-Pt 8:00 - 20:00 </p>
+              <span class="fa-stack fa-1x"></span>
+              <div class="col-lg-12 text-center">
+                <h5 class="section-heading text-uppercase">Kiedy jesteśmy otwarci</h5>
+              </div>
+              <p class="large text-muted">Pn - Pt 10:00 - 19:00 </p>
+              <p class="large text-muted">Sob 9:00 - 15:00 </p>
             </div>
           </div>
         </div>
@@ -119,11 +127,11 @@
       <div class="row">
         <div class="col-lg-4 ml-auto text-center">
           <i class="fa fa-4x fa-envelope mb-3" style="font-size:3.8rem; color:#ed1c24;"></i>
-          <p class="text-muted mid-size">mail&#64;gmail.com</p>
+          <p class="text-muted mid-size">salon.look&#64;o2.pl</p>
         </div>
         <div class="col-lg-4 mr-auto text-center">
           <i class="fa fa-4x fa-phone mb-3" style="font-size:3.8rem; color:#ed1c24;"></i>
-          <p class="text-muted mid-size">+48 666 777 888</p>
+          <p class="text-muted mid-size">+48 534 231 830</p>
         </div>
       </div>
       <div class="row">
@@ -141,10 +149,6 @@
                     data-validation-required-message="Wpisz swój adres email.">
                   <p class="help-block text-danger"></p>
                 </div>
-                <div class="form-group">
-                  <input class="form-control" id="phone" type="tel" placeholder="Numer telefonu *">
-                  <p class="help-block text-danger"></p>
-                </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
@@ -155,6 +159,14 @@
               </div>
               <div class="clearfix"></div>
               <div class="col-lg-12 text-center">
+                <label> <input id="rodo" type="checkbox" required="required"> Wyrażam zgodę na przetwarzanie danych
+                  osobowych zgodnie z ustawą o ochronie danych osobowych w
+                  związku z wysłaniem zapytania poprzez formularz kontaktowy. Podanie danych jest dobrowolne, ale
+                  niezbędne do przetworzenia zapytania. Zostałem poinformowany, że przysługuje mi prawo dostępu do
+                  swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem
+                  danych jest firma OMEGA Bartłomiej Silkowski ul. Bystrzycka 105/24.
+                </label>
+                <p class="help-block text-danger"></p>
                 <div id="success"></div>
                 <button id="sendMessageButton" class="btn btn-primary btn-xl rounded-pill text-uppercase mt-5" type="submit">Wyślij</button>
               </div>
@@ -198,6 +210,7 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="js/img_slideshow.js"></script>
+  <script src="js/contact_me.js"></script>
 
 </body>
 
